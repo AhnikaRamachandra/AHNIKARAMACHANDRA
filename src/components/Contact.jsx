@@ -29,7 +29,7 @@ function Contact() {
             <span className='text-black text-xs'><MdArrowOutward /></span>
           </div>
           <div className='rounded-2xl px-2 py-1 flex items-center bg-gray-200'>
-            <a href="Ahnika...pdf" download className='text-xs'>Resume</a>
+            <a href="Ahnika__.pdf" download className='text-xs'>Resume </a>
           </div>
         </div>
       </div>
