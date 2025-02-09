@@ -1,9 +1,8 @@
-import image1 from '../assets/image1.png'
-import image2 from '../assets/image2.png'
-import vedio1 from '../assets/vedio1.mp4'
+
 import vedio2 from '../assets/v2.mp4'
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
+import vedio5 from '../assets/vedio5.mp4'
 export const PROJECTS = [
     {
       title: "Chic & Shine",
@@ -26,6 +25,13 @@ export const PROJECTS = [
       technologies: ["Python", "NLP", "Machine Learning"],
       video: vedio4,
       link: "https://github.com/AhnikaRamachandra/EduEvall"     
+    },
+    {
+      title: "Beat Flow (Figma design)",
+      description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
+      technologies: ["Figma", "Canva"],
+      video: vedio5,
+      link: "https://www.figma.com/design/WeJieQojvfbz03HazjfWRX/Beatflow?node-id=0-1&t=E4voQL9TtQUv4ssL-1"     
     },
     
   ];
