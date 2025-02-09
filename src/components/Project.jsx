@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { PROJECTS } from '../constants';
 import { MdArrowOutward } from "react-icons/md";
 function Project() {
@@ -22,10 +22,10 @@ function Project() {
             )}
             <div className="mt-4 ml-1">
               <a href={project.link} target='_blank' rel='noopener noreferrer'>
-                <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 text-gray-900">
+                <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 hover:text-gray-400 text-gray-900">
                   {project.title}<MdArrowOutward />
                 </h5>
-                <h6 className='text-gray-500 text-sm font-light'>{project.description}</h6>
+                <h6 className='text-gray-500 hover:text-gray-800 text-sm font-light'>{project.description}</h6>
               </a>
             </div>
           </div>

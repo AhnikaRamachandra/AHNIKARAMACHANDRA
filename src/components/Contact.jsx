@@ -1,37 +1,41 @@
-import React from 'react';
 import { MdArrowOutward } from "react-icons/md";
+import { motion } from "framer-motion";
 
 function Contact() {
   return (
-    <div>
-      <h1 className='mt-12'>Connect</h1>
-      <div className='mt-5'>
-        <p className='text-sm text-gray-700 tracking-tight'>
-          Feel free to contact at <span className='underline'>ahnikaramachandra@gmail.com</span>
-        </p>
-        <div className='flex flex-wrap justify-items-start mt-5 gap-3'>
-          <div className='rounded-2xl px-2 py-1 flex items-center bg-gray-200'>
-            <h6 className='text-xs'>
-              <a href="https://github.com/AhnikaRamachandra" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </h6>
-            <span className='text-black text-sm'><MdArrowOutward /></span>
-          </div>
-          <div className='rounded-2xl px-2 py-1 flex items-center bg-gray-200'>
-            <h6 className='text-xs'>
-              <a href="https://www.linkedin.com/in/ahnika9" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            </h6>
-            <span className='text-black text-xs'><MdArrowOutward /></span>
-          </div>
-          <div className='rounded-2xl px-2 py-1 flex items-center bg-gray-200'>
-            <h6 className='text-xs'>
-              <a href="https://www.instagram.com/ahnikaramachandra/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </h6>
-            <span className='text-black text-xs'><MdArrowOutward /></span>
-          </div>
-          <div className='rounded-2xl px-2 py-1 flex items-center bg-gray-200'>
-            <a href="Ahnika__.pdf" download className='text-xs'>Resume </a>
-          </div>
-        </div>
+    <div className="mt-14 ">
+      <h1 className=" mb-5">Connect</h1>
+      <p className="text-sm text-gray-700 tracking-tight">
+        Feel free to contact at 
+        <span className="underline ml-1">ahnikaramachandra@gmail.com</span>
+      </p>
+      <div className="flex flex-wrap justify-start mt-6 gap-4">
+        {[
+          { name: "GitHub", link: "https://github.com/AhnikaRamachandra" },
+          { name: "LinkedIn", link: "https://www.linkedin.com/in/ahnika9" },
+          { name: "Instagram", link: "https://www.instagram.com/ahnikaramachandra/" },
+        ].map((item, index) => (
+          <motion.a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-2 rounded-2xl bg-gray-200 text-xs hover:bg-gray-300 transition-all shadow-md hover:shadow-lg"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {item.name} <MdArrowOutward className="text-sm" />
+          </motion.a>
+        ))}
+        <motion.a
+          href="Ahnika__.pdf"
+          download
+          className="px-4 py-2 bg-gray-800 text-white text-xs rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-700 transition-all"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Download Resume
+        </motion.a>
       </div>
     </div>
   );
