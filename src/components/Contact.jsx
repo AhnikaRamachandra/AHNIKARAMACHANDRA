@@ -28,7 +28,7 @@ function Contact() {
           </motion.a>
         ))}
         <motion.a
-          href="Ahnika__.pdf"
+          href="ahnika_ramachandra..pdf"
           download
           className="px-4 py-2 bg-gray-800 text-white text-xs rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-700 transition-all"
           whileHover={{ scale: 1.1 }}
