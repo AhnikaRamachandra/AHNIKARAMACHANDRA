@@ -28,11 +28,8 @@ export default function Experience() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className='flex flex-wrap justify-between items-center mb-3'>
-          <h5 className='text-lg font-semibold text-gray-800'>Project Experience</h5>
-          <p className="text-gray-500 text-xs">2024</p>
-        </div>
-        <p className="text-gray-600 text-sm">Developed various frontend applications using React and Tailwind CSS.</p>
+     
+        <p className="text-gray-600 text-sm">I will post figma design or projects everyday in my portfolio.</p>
       </motion.div>
     </div>
   );
