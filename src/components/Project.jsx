@@ -7,7 +7,7 @@ function Project() {
       <div>
         <h1 className='mt-16 mb-5'>Project</h1>
       </div>
-      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3'>
+      <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
         {PROJECTS.map((project, index) => (
           <div key={index} className="max-w-sm rounded-lg ">
             {project.video ? (

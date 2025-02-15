@@ -29,7 +29,7 @@ export default function Experience() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
      
-        <p className="text-gray-600 text-sm">I will post figma design or projects everyday in my portfolio.</p>
+        <p className="text-gray-600 text-sm">I post figma design || projects everyday in my portfolio.</p>
       </motion.div>
     </div>
   );
