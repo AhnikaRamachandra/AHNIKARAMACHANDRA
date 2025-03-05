@@ -20,17 +20,7 @@ export default function Experience() {
         <p className="text-gray-600 text-sm">Pace Wisdom Solutions</p>
       </motion.div>
     
-      <motion.div
-        className="group relative mt-5 w-full p-6 rounded-lg border border-gray-300 transition-all duration-300 hover:border-gray-500 shadow-md hover:shadow-lg bg-white"
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-      >
-     
-        <p className="text-gray-600 text-sm">I post figma design || projects everyday in my portfolio.</p>
-      </motion.div>
+   
     </div>
   );
 }

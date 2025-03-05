@@ -1,6 +1,7 @@
-
-import { PROJECTS } from '../constants';
+import { PROJECTS } from "../constants";
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
+
 function Project() {
   return (
     <>
@@ -9,24 +10,39 @@ function Project() {
       </div>
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2'>
         {PROJECTS.map((project, index) => (
-          <div key={index} className="max-w-sm rounded-lg ">
+          <div key={index} className="max-w-sm rounded-lg">
             {project.video ? (
               <video className="rounded-lg w-full h-auto" autoPlay loop muted>
                 <source src={project.video} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            ) : project.link === "/figma-design" ? (
+              // ✅ Use <Link> only for Figma Design
+              <Link to={project.link}>
+                <img className="rounded-lg" src={project.image} alt={project.title} />
+              </Link>
             ) : (
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img className="rounded-lg" src={project.image} alt={project.title} />
               </a>
             )}
+
             <div className="mt-4 ml-1">
-              <a href={project.link} target='_blank' rel='noopener noreferrer'>
-                <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 hover:text-gray-400 text-gray-900">
-                  {project.title}<MdArrowOutward />
-                </h5>
-                <h6 className='text-gray-500 hover:text-gray-800 text-sm font-light'>{project.description}</h6>
-              </a>
+              {project.link === "/figma-design" ? (
+                <Link to={project.link}>
+                  <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 hover:text-gray-400 text-gray-900">
+                    {project.title} <MdArrowOutward />
+                  </h5>
+                  <h6 className='text-gray-500 hover:text-gray-800 text-sm font-light'>{project.description}</h6>
+                </Link>
+              ) : (
+                <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                  <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 hover:text-gray-400 text-gray-900">
+                    {project.title} <MdArrowOutward />
+                  </h5>
+                  <h6 className='text-gray-500 hover:text-gray-800 text-sm font-light'>{project.description}</h6>
+                </a>
+              )}
             </div>
           </div>
         ))}

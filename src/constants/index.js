@@ -26,14 +26,14 @@ export const PROJECTS = [
       description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
       technologies: ["Figma", "Canva"],
       image:img2,
-      link: "https://www.figma.com/design/F1QZ5fR6I6rf0RCJ1Ug3Ed/SoulSync?node-id=0-1&p=f&t=J9b8cG7OgKCb1IYy-0"  
+      link: " /hypey"
     },
     {
       title: "Beat Flow (Figma design)",
       description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
       technologies: ["Figma", "Canva"],
       image:img1,
-      link: "https://www.figma.com/design/WeJieQojvfbz03HazjfWRX/Beatflow?node-id=0-1&t=E4voQL9TtQUv4ssL-1"     
+      link:"/Beatflow"      
     },
     
   ];
