@@ -1,5 +1,5 @@
 import img1 from '../assets/desk1.png'
-import img2 from '../assets/desk2.png'
+import img2 from '../assets/figma1.png'
 import vedio2 from '../assets/v2.mp4'
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
@@ -22,7 +22,7 @@ export const PROJECTS = [
       link: "https://github.com/AhnikaRamachandra/EduEvall"     
     },
     {
-      title: "Figma design",
+      title: "Bitecraft",
       description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
       technologies: ["Figma", "Canva"],
       image:img2,
@@ -30,11 +30,11 @@ export const PROJECTS = [
     },
     {
       title: "Beat Flow (Figma design)",
-      description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
+      description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
       technologies: ["Figma", "Canva"],
       image:img1,
       link:"/Beatflow"      
-    },
+    }
     
   ];
   
