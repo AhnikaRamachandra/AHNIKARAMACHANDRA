@@ -1,10 +1,10 @@
-import img2 from '../assets/desk2.png';
 
+import img from '../assets/final.png'
 function Figma1() {
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-6 shadow-lg rounded-lg bg-white">
-      <h1 className="text-3xl font-bold text-gray-900">Figma Design Details</h1>
-      <img className="rounded-lg mt-4 w-full" src={img2} alt="Figma Design" />
+    <div className="   shadow-lg rounded-lg ml-14 mt-8 mr-14 bg-white">
+    
+      <img className="rounded-lg  w-full" src={img} alt="Figma Design" />
       <p className="mt-4 text-gray-700">
         This design was created using Figma, focusing on user experience, accessibility, and a modern interface.
       </p>

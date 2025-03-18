@@ -17,12 +17,12 @@ function Project() {
                 Your browser does not support the video tag.
               </video>
             ) : project.link === "/figma-design" ? (
-              // ✅ Use <Link> only for Figma Design
+             
               <Link to={project.link}>
                 <img className="rounded-lg" src={project.image} alt={project.title} />
               </Link>
             ) : (
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
+              <a href={project.link} >
                 <img className="rounded-lg" src={project.image} alt={project.title} />
               </a>
             )}
@@ -36,7 +36,7 @@ function Project() {
                   <h6 className='text-gray-500 hover:text-gray-800 text-sm font-light'>{project.description}</h6>
                 </Link>
               ) : (
-                <a href={project.link} target='_blank' rel='noopener noreferrer'>
+                <a href={project.link} >
                   <h5 className="mb-2 text-sm tracking-tight flex items-center justify-start gap-1 hover:text-gray-400 text-gray-900">
                     {project.title} <MdArrowOutward />
                   </h5>

@@ -16,29 +16,28 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center items-center h-screen">
-        <div className="md:ml-0 ml-3 md:mr-0 mr-3 md:w-[50%] h-full">
-         
-          {!isFigmaPage && <Navbar />}
-
-          <Routes>
-            <Route path="/" element={<Project />} />
-            <Route path="/hypey" element={<Figma1 />} />
-            <Route path="/Beatflow" element={<Figma2 />} />
-         
-          </Routes>
-
-         
-          {!isFigmaPage && (
-            <>
-              <Cards />
-              <Experience />
-              <Contact />
-              <Footer />
-            </>
-          )}
+    
+    {isFigmaPage ? (
+        // Render Figma pages without the layout wrapper
+        <Routes>
+          <Route path="/hypey" element={<Figma1 />} />
+          <Route path="/Beatflow" element={<Figma2 />} />
+        </Routes>
+      ) : (
+        // Default layout for all other pages
+        <div className="flex justify-center items-center h-screen">
+          <div className="md:ml-0 ml-3 md:mr-0 mr-3 md:w-[50%] h-full">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Project />} />
+            </Routes>
+            <Cards />
+            <Experience />
+            <Contact />
+            <Footer />
+          </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
