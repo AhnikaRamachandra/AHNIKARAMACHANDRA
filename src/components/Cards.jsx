@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 function Cards() {
-  const skills = ["Skills","HTML", "CSS", "JavaScript", "Tailwind CSS", "React JS", "Figma"];
+  const skills = ["Skills","HTML", "CSS", "JavaScript", "Tailwind CSS", "Canva", "Figma"];
 
   return (
     <div className="mt-16 text-center">
