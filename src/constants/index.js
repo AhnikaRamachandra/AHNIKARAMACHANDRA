@@ -26,7 +26,7 @@ export const PROJECTS = [
       description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
       technologies: ["Figma", "Canva"],
       image:img2,
-      link: "/hypey"
+      link: "/figma1"
     },
     {
       title: "Beat Flow (Figma design)",

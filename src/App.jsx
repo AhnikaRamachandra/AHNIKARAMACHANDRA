@@ -12,7 +12,7 @@ function App() {
   const location = useLocation(); 
 
   
-  const isFigmaPage = ["/hypey","/Beatflow"].includes(location.pathname);
+  const isFigmaPage = ["/figma1","/Beatflow"].includes(location.pathname);
 
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
     {isFigmaPage ? (
         // Render Figma pages without the layout wrapper
         <Routes>
-          <Route path="/hypey" element={<Figma1 />} />
+          <Route path="/figma1" element={<Figma1 />} />
           <Route path="/Beatflow" element={<Figma2 />} />
         </Routes>
       ) : (

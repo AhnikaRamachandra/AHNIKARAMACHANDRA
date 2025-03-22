@@ -9,13 +9,7 @@ function Figma2() {
             <p className="mt-4 text-gray-700">
               This design was created using Figma, focusing on user experience, accessibility, and a modern interface.
             </p>
-            <a 
-              href="https://www.figma.com/file/YOUR-FIGMA-LINK" 
-            
-              className="mt-6 inline-block bg-gray-800 text-white py-2 px-4 rounded-lg hover:bg-gray-600"
-            >
-              View on Figma
-            </a>
+           
           </div>
  
   )
