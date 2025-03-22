@@ -1,9 +1,9 @@
 import img1 from '../assets/desk1.png'
 import img2 from '../assets/figma1.png'
-import vedio2 from '../assets/v2.mp4'
+
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
-import vedio5 from '../assets/vedio5.mp4'
+
 export const PROJECTS = [
     {
       title: "Chic & Shine",
