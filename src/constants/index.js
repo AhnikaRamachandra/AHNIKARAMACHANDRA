@@ -1,4 +1,4 @@
-import img1 from '../assets/desk1.png'
+import img1 from '../assets/showbeat.png'
 import img2 from '../assets/figma1.png'
 
 import vedio3 from '../assets/v3.mp4'
@@ -34,7 +34,8 @@ export const PROJECTS = [
       technologies: ["Figma", "Canva"],
       image:img1,
       link:"/Beatflow"      
-    }
+    },
+ 
     
   ];
   

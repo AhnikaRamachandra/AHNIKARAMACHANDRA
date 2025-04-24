@@ -8,6 +8,7 @@ import Experience from "./components/Experience";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
+
 function App() {
   const location = useLocation(); 
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/figma1" element={<Figma1 />} />
           <Route path="/Beatflow" element={<Figma2 />} />
+        
         </Routes>
       ) : (
         // Default layout for all other pages
