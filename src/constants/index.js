@@ -1,10 +1,24 @@
 import img1 from '../assets/showbeat.png'
 import img2 from '../assets/figma1.png'
-
+import weather from '../assets/weather.mp4'
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
 
 export const PROJECTS = [
+  {
+    title: "Bitecraft",
+    description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
+    technologies: ["Figma", "Canva"],
+    image:img2,
+    link: "/figma1"
+  },
+  {
+    title: "Beat Flow (Figma design)",
+    description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
+    technologies: ["Figma", "Canva"],
+    image:img1,
+    link:"/Beatflow"      
+  },
     {
       title: "Chic & Shine",
       description: "A stylish and user-friendly e-commerce platform built using HTML, CSS, and JavaScript.",
@@ -12,7 +26,14 @@ export const PROJECTS = [
       video: vedio3,
       link: "https://chicshine-ahnikas-projects.vercel.app/"    
     },
-    
+    {
+      title: "Weather App",
+      description: "A simple and responsive weather app built with HTML, CSS, and JavaScript. Displays temperature, humidity, wind speed, and conditions based on the searched city.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      video: weather,
+      link: "https://ahnikaramachandra.github.io/weather.io.github/"     
+    },
+ 
    
     {
       title: "EduEval",
@@ -20,21 +41,7 @@ export const PROJECTS = [
       technologies: ["Python", "NLP", "Machine Learning"],
       video: vedio4,
       link: "https://github.com/AhnikaRamachandra/EduEvall"     
-    },
-    {
-      title: "Bitecraft",
-      description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
-      technologies: ["Figma", "Canva"],
-      image:img2,
-      link: "/figma1"
-    },
-    {
-      title: "Beat Flow (Figma design)",
-      description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
-      technologies: ["Figma", "Canva"],
-      image:img1,
-      link:"/Beatflow"      
-    },
+    }
  
     
   ];

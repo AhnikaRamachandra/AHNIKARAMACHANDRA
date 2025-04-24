@@ -14,6 +14,7 @@ function Contact() {
           { name: "GitHub", link: "https://github.com/AhnikaRamachandra" },
           { name: "LinkedIn", link: "https://www.linkedin.com/in/ahnika9" },
           { name: "Instagram", link: "https://www.instagram.com/ahnikaramachandra/" },
+      
         ].map((item, index) => (
           <motion.a
             key={index}
