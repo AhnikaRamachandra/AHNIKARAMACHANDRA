@@ -3,7 +3,7 @@ import img2 from '../assets/figma1.png'
 import weather from '../assets/weather.mp4'
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
-
+import design from '../assets/design.png'
 export const PROJECTS = [
   {
     title: "Bitecraft",
@@ -18,6 +18,13 @@ export const PROJECTS = [
     technologies: ["Figma", "Canva"],
     image:img1,
     link:"/Beatflow"      
+  },
+  {
+    title: "Design system",
+    description: "Design system using figma.",
+    technologies: ["Figma"],
+    image:design,
+    link: "https://www.figma.com/design/4X0fAAzDxlgqOgDUdSxRlf/Ahnika?node-id=0-1&p=f&t=CyKJHQ2WPFzrhcJW-0"    
   },
     {
       title: "Chic & Shine",
