@@ -4,6 +4,7 @@ import weather from '../assets/weather.mp4'
 import vedio3 from '../assets/v3.mp4'
 import vedio4 from '../assets/v4.mp4'
 import design from '../assets/design.png'
+import chic from '../assets/chic.png'
 export const PROJECTS = [
   {
     title: "Bitecraft",
@@ -30,7 +31,7 @@ export const PROJECTS = [
       title: "Chic & Shine",
       description: "A stylish and user-friendly e-commerce platform built using HTML, CSS, and JavaScript.",
       technologies: ["HTML", "CSS", "JavaScript"],
-      video: vedio3,
+      image:chic,
       link: "https://chicshine-ahnikas-projects.vercel.app/"    
     },
     {
