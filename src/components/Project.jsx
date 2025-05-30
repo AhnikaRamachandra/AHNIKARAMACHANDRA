@@ -12,7 +12,7 @@ function Project() {
           {project.video ? (
             <video className="rounded-lg w-full h-auto" autoPlay loop muted>
               <source src={project.video} type="video/mp4" />
-              Your browser does not support the video tag.
+             video tag.
             </video>
           ) : (
             <Link to={project.link}>
