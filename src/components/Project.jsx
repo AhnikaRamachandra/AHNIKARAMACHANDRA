@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Project() {
   return (
-    <div className="grid mt-20 grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+    <div className="grid mt-20 grid-cols-1 gap-16 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
       {PROJECTS.map((project, index) => (
         <div key={index} className="max-w-sm rounded-lg shadow-lg p-4 bg-white">
           {/* Render video or image */}

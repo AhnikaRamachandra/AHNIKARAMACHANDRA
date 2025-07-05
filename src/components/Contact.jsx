@@ -1,20 +1,25 @@
 import { MdArrowOutward } from "react-icons/md";
 import { motion } from "framer-motion";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function Contact() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const onAboutPage = location.pathname === "/about";
+
   return (
-    <div className="mt-14 ">
-      <h1 className=" mb-5">Connect</h1>
+    <div className="mt-14">
+      <h1 className="mb-5">Connect</h1>
       <p className="text-sm text-gray-700 tracking-tight">
-        Feel free to contact at 
+        Feel free to contact at
         <span className="underline ml-1">ahnikaramachandra@gmail.com</span>
       </p>
+
       <div className="flex flex-wrap justify-start mt-6 gap-4">
         {[
           { name: "GitHub", link: "https://github.com/AhnikaRamachandra" },
           { name: "LinkedIn", link: "https://www.linkedin.com/in/ahnika9" },
           { name: "Instagram", link: "https://www.instagram.com/ahnikaramachandra/" },
-      
         ].map((item, index) => (
           <motion.a
             key={index}
@@ -28,6 +33,7 @@ function Contact() {
             {item.name} <MdArrowOutward className="text-sm" />
           </motion.a>
         ))}
+
         <motion.a
           href="Ahnika.pdf"
           download
@@ -37,6 +43,15 @@ function Contact() {
         >
           Download Resume
         </motion.a>
+
+        <motion.button
+          onClick={() => navigate(onAboutPage ? "/" : "/about")}
+          className="px-4 py-2 bg-gray-800 text-white text-xs rounded-2xl shadow-md hover:shadow-lg hover:bg-blue-500 transition-all"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          {onAboutPage ? "Go Back" : "More About Me"}
+        </motion.button>
       </div>
     </div>
   );
