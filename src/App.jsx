@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
 
+
 function App() {
   const location = useLocation(); 
 
@@ -19,8 +20,9 @@ function App() {
       {isFigmaPage ? (
         // Figma pages only
         <Routes>
+            <Route path="/Beatflow" element={<Figma2 />} />
           <Route path="/figma1" element={<Figma1 />} />
-          <Route path="/Beatflow" element={<Figma2 />} />
+         
         </Routes>
       ) : (
         <div className="flex justify-center items-start min-h-screen">
@@ -29,11 +31,12 @@ function App() {
             {!isAboutPage && <Navbar />}
             <Routes>
               <Route path="/" element={<Project />} />
+             
               <Route path="/about" element={<AboutMe />} />
             </Routes>
             {!isAboutPage && (
               <>
-              
+            
                 <Contact />
                 <Footer />
               </>

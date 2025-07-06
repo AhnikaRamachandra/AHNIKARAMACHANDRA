@@ -1,11 +1,18 @@
 import img1 from '../assets/showbeat.png'
 import img2 from '../assets/figma1.png'
 import edueval from '../assets/eduevals.png'
-
+import design from '../assets/designsystem.png'
 import weather from '../assets/weather.png'
 import chic from '../assets/chic.png'
 export const PROJECTS = [
+
   {
+    title: "Beat Flow (Figma design)",
+    description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
+    technologies: ["Figma", "Canva"],
+    image:img1,
+    link:"/Beatflow"      
+  },  {
     title: "Bitecraft",
     description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
     technologies: ["Figma", "Canva"],
@@ -13,13 +20,13 @@ export const PROJECTS = [
     link: "/figma1"
   },
   {
-    title: "Beat Flow (Figma design)",
-    description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
-    technologies: ["Figma", "Canva"],
-    image:img1,
-    link:"/Beatflow"      
-  },
-
+  title: "UI Design System",
+  description: "A reusable, scalable UI design system built using Figma. It includes components like buttons, checkboxes, form fields, modals, and a consistent color & typography style guide to ensure visual consistency across products.",
+  technologies: ["Figma", "Auto Layout", "Variants", "Typography", "Color Tokens"],
+  image: design,
+  link: "https://www.figma.com/design/d4X5ZrlgyAQI87aDfqDY2v/icons?node-id=0-1&t=muHdxloKfBdVmRzH-1" 
+}
+,
     {
       title: "Chic & Shine",
       description: "A stylish and user-friendly e-commerce platform built using HTML, CSS, and JavaScript.",
