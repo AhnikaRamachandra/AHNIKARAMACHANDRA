@@ -8,7 +8,7 @@ export const PROJECTS = [
 
   {
     title: "Beat Flow (Figma design)",
-    description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
+    description: " A minimal music app interface that helps users discover and enjoy their favorite songs across various genres.",
     technologies: ["Figma", "Canva"],
     image:img1,
     link:"/Beatflow"      
@@ -21,7 +21,7 @@ export const PROJECTS = [
   link: "https://www.figma.com/design/d4X5ZrlgyAQI87aDfqDY2v/icons?node-id=0-1&t=imDAYUIfl6Qxve94-1" 
 }, {
     title: "Bitecraft",
-    description: "Designed an user interface using Figma, focusing on user experience and accessibility.",
+    description: " A sleek recipe app for discovering, cooking, and sharing delicious meals with ease.",
     technologies: ["Figma", "Canva"],
     image:img2,
     link: "/figma1"
