@@ -24,7 +24,7 @@ export const PROJECTS = [
   description: "A reusable, scalable UI design system built using Figma. It includes components like buttons, checkboxes, form fields, modals, and a consistent color & typography style guide to ensure visual consistency across products.",
   technologies: ["Figma", "Auto Layout", "Variants", "Typography", "Color Tokens"],
   image: design,
-  link: "https://www.figma.com/design/d4X5ZrlgyAQI87aDfqDY2v/icons?node-id=0-1&t=muHdxloKfBdVmRzH-1" 
+  link: "https://www.figma.com/design/d4X5ZrlgyAQI87aDfqDY2v/icons?node-id=0-1&t=imDAYUIfl6Qxve94-1" 
 }
 ,
     {
