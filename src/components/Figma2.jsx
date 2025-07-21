@@ -1,33 +1,49 @@
 import React from 'react';
-import img1 from '../assets/Headerbeat.png';
-import img2 from '../assets/Bodybeat.png';
-import img3 from '../assets/Endbeatflow.png';
-import prototype from '../assets/Beatflowvedio.mp4'; 
 
+import img4 from '../assets/flowchart.png'
+
+import statements from '../assets/Statement.png'
+import prototype from '../assets/Beatflowvedios.mp4'; 
+import body from '../assets/Body.png'
+import image2 from '../assets/beat.png';
+import typo from '../assets/typo.png';  
+import flow from '../assets/Flow.png';
+import pro from '../assets/Pro.png'
+import footer from '../assets/Footer.png'
 function Figma2() {
   return (
-    <div className="ml-24 mr-24 bg-white space-y-8">
+    <div className="  bg-black ">
 
+   
+
+   
+    <img className=" w-full" src={image2} alt="Figma Design Start" />
+    
+    
+ <img className=" w-full mt-0" src={statements} alt="Figma Design Start" />
+ <img className=" w-full mt-0" src={typo} alt="Figma Design Start" />
+
+    <img className=" w-full mt-0" src={body} alt="Figma Design Start" />
+
+      <img className=" w-full mt-10" src={flow} alt="Figma Design Start" />  
+    
+<img className=" w-full pr-14 pl-14 pt-10 " src={img4} alt="Figma Design End" />
      
-      <img className="rounded-lg w-full" src={img1} alt="Figma Design Header" />
+  <img className=" w-full mt-10" src={pro} alt="Figma Design Start" />  
 
-    
-      <img className="rounded-lg w-full" src={img2} alt="Figma Design Body" />
-
-    
-      <div className="flex flex-col md:flex-row gap-6 items-center justify-center">
+      <div className="">
         <video 
           src={prototype} 
           autoPlay 
           loop 
           muted 
           playsInline
-          className="w-full md:w-1/2 rounded-lg shadow-lg"
+          className="w-full"
         />
       </div>
 
-     
-      <img className="rounded-lg w-full" src={img3} alt="Figma Design End" />
+      <img className=" w-full mt-0" src={footer} alt="Figma Design Start" />
+      
       
     </div>
   );

@@ -4,13 +4,14 @@ import edueval from '../assets/eduevals.png'
 import design from '../assets/Designsystem.png'
 import weather from '../assets/weather.png'
 import chic from '../assets/chic.png'
+import beatflow from '../assets/beat.png'
 export const PROJECTS = [
 
   {
     title: "Beat Flow (Figma design)",
     description: " A minimal music app interface that helps users discover and enjoy their favorite songs across various genres.",
     technologies: ["Figma", "Canva"],
-    image:img1,
+    image:beatflow,
     link:"/Beatflow"      
   },
    {
