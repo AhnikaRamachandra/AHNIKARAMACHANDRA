@@ -12,9 +12,9 @@ function AboutMe() {
         <h2 className="text-xl font-semibold mb-4">Fun facts about me</h2>
 
         <p>
-          🎨 I’m a passionate UI/UX designer from Udupi who enjoys
+          🎨 I’m a passionate UI/UX designer from Udupi. I enjoy
           creating meaningful and user-friendly digital experiences.
-          I’ve always loved the balance between creativity and logic—it's what
+          I’ve always loved the balance between creativity and logic it's what
           drew me toward design and frontend development.
         </p>
 
@@ -27,7 +27,7 @@ function AboutMe() {
         <p>
           🖌️ My internships at Uzence and Pace Wisdom helped me dive deeper into UI/UX,
           where I discovered my interest in design systems, wireframing, user flows, and solving
-          real-world problems through design.
+          real world problems through design.
         </p>
 
         <p>
