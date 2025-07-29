@@ -2,7 +2,7 @@ import React from 'react';
 
 import img4 from '../assets/flowchart.png'
 
-import statements from '../assets/Statement.png'
+import statements from '../assets/Statements.png'
 import prototype from '../assets/Beatflowvedios.mp4'; 
 import body from '../assets/Body.png'
 import image2 from '../assets/beat.png';
