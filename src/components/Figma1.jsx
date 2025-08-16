@@ -1,10 +1,13 @@
-
-import img from '../assets/final.png'
+import moodboard from '../assets/moodboardbitecraft.png'
+import bite1 from '../assets/bitecraft1.png'
+import bite2 from '../assets/bite2.png'
 function Figma1() {
   return (
-    <div className="shadow-lg rounded-lg ml-14 mt-8 mr-14 bg-white">
+    <div className=" bg-black">
     
-      <img className="rounded-lg  w-full" src={img} alt="Figma Design" />
+ <img className="rounded-lg  w-full" src={bite1} alt="bitecraft" />
+  <img className="mt-16  w-full" src={moodboard} alt="bitecraft" />
+  <img className="mb-0  w-full" src={bite2} alt="bitecraft" />
     
      
     </div>
