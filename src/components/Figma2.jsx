@@ -100,6 +100,8 @@ function Figma2() {
      <img className='mt-0' src={wireframe} alt="" />
       </div>
       <h1 className='text-5xl text-center pt-10 pb-16 font-bold bg-[linear-gradient(90deg,#E84E4E_48%,#D86E6E_94%)] bg-clip-text text-transparent'>Thank you</h1>
+
+      
     </div >
   );
 }

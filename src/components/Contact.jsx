@@ -35,7 +35,7 @@ function Contact() {
         ))}
 
         <motion.a
-          href="Ahnika.pdf"
+          href="Resume.pdf"
           download
           className="px-4 py-2 bg-gray-800 text-white text-xs rounded-2xl shadow-md hover:shadow-lg hover:bg-gray-700 transition-all"
           whileHover={{ scale: 1.1 }}
@@ -44,14 +44,7 @@ function Contact() {
           Download Resume
         </motion.a>
 
-        <motion.button
-          onClick={() => navigate(onAboutPage ? "/" : "/about")}
-          className="px-4 py-2 bg-gray-800 text-white text-xs rounded-2xl shadow-md hover:shadow-lg hover:bg-blue-500 transition-all"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          {onAboutPage ? "Go Back" : "More About Me"}
-        </motion.button>
+      
       </div>
     </div>
   );

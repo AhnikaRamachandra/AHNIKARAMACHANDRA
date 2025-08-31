@@ -44,13 +44,7 @@ export const PROJECTS = [
     },
  
    
-    {
-      title: "EduEval",
-      description: "Edueval is a grading platform built using Next.js, Node.js with Express.js, integrating OCR and NLP for automated, accurate paper evaluation",
-      technologies: ["Python", "NLP", "Machine Learning"],
-       image: edueval,
-      link: "https://github.com/AhnikaRamachandra/EduEvall"     
-    }
+    
  
     
   ];
