@@ -100,7 +100,16 @@ function Figma2() {
      <img className='mt-0' src={wireframe} alt="" />
       </div>
       <h1 className='text-5xl text-center pt-10 pb-16 font-bold bg-[linear-gradient(90deg,#E84E4E_48%,#D86E6E_94%)] bg-clip-text text-transparent'>Thank you</h1>
-
+<div className="text-center p-10">
+  <a 
+    href="https://www.figma.com/design/WeJieQojvfbz03HazjfWRX/Beatflow?node-id=0-1&t=acfzqZNhOv4dQaGo-1" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    className="inline-block bg-[#DD3A3A] text-white px-6 py-3 rounded-2xl shadow-lg hover:bg-[#9e1212] transition"
+  >
+    View Figma File
+  </a>
+</div>
       
     </div >
   );
