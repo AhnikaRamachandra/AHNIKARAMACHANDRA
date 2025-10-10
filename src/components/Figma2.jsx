@@ -1,21 +1,21 @@
 import React from 'react';
 
-import homescreen from '../assets/Homescreen.png'
-import statements from '../assets/Statements.png'
+import homescreen from '../assets/hoMEPAGEBEATFLOW.png'
+import statements from '../assets/research.png'
 import prototype from '../assets/Beatflowvedios.mp4'; 
 
 import typo from '../assets/Typography.png';  
 import flowchart from '../assets/Beatflowchart.png';
 
-import artist from '../assets/Artist.png'
-import mood from '../assets/Mood.png'
+import artist from '../assets/artist page.png'
+import mood from '../assets/poppage.png'
 import otherscreen from '../assets/otherscreens.png'
 import back from '../assets/back.png'
 import backside from '../assets/backside.png'
 import front from '../assets/Front.png'
-import random from '../assets/Random.png'
+import random from '../assets/falshpage.png'
 import wireframe from '../assets/Wireframe.png'
-import playlist from '../assets/Playlist.png'
+import playlist from '../assets/Playlistbeat.png'
 function Figma2() {
   return (
     <div className="  bg-black ">
@@ -70,7 +70,7 @@ function Figma2() {
           <div  className='mt-10'>
       <h1 className=" p-5 text-5xl font-bold bg-[linear-gradient(90deg,#E84E4E_48%,#D86E6E_94%)] bg-clip-text text-transparent">Your Personalized Playlist Hub</h1>
       <p className='pt-5 pl-5 pr-5 text-lg text-gray-400'>All your favorite music in one place! The Playlist screen lets you save songs you love, access your liked tracks, and even listen to downloaded music offline. Whether it is a mood based mix or your own custom list, BeatFlow makes it easy to organize and vibe to your favorite tunes anytime, anywhere.</p>
-      <img className='mt-[-60px]' src={playlist} alt="" />
+      <img className='mt-[-30px]' src={playlist} alt="" />
       </div> 
          <div  className=''>
       <h1 className=" p-5 text-5xl font-bold bg-[linear-gradient(90deg,#E84E4E_48%,#D86E6E_94%)] bg-clip-text text-transparent">Other screens</h1>
