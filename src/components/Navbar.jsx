@@ -1,25 +1,37 @@
-import { motion } from "framer-motion";
+import { useLocation, Link } from "react-router-dom";
 
 function Navbar() {
-  return (
-    <motion.div 
-      className="mt-48 "
-      initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-    >
-      <h1 className="tracking-tight text-2xl  text-gray-900">Ahnika Ramachandra</h1> 
-      <p className="text-sm text-gray-500 font-light mt-1">Designing intuitive and engaging digital experiences.</p>
+  const { pathname } = useLocation();
 
-      <motion.p 
-        className="text-sm text-gray-800 font-light mt-8 max-w-md "
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.6 }}
-      >
-        I blend creativity and functionality to craft seamless user interfaces.
-      </motion.p>
-    </motion.div>
+  return (
+    <>
+      {/* Top navigation bar */}
+      <div className="w-full fixed top-0 left-0 bg-white z-50">
+        <div className="max-w-7xl mx-auto tracking-tight text-md text-gray-900 flex justify-end items-center px-2 py-3 gap-10">
+          
+          {/* Projects Link */}
+          <Link to="/" className="relative inline-block pb-1">
+            Projects
+            <span
+              className={`absolute left-1/2 bottom-0 transform -translate-x-1/2 h-[2px] bg-black transition-all duration-300 ${
+                pathname === "/" ? "w-6" : "w-0"
+              }`}
+            ></span>
+          </Link>
+
+          {/* About Me Link */}
+          <Link to="/about" className="relative inline-block pb-1">
+            About Me
+            <span
+              className={`absolute left-1/2 bottom-0 transform -translate-x-1/2 h-[2px] bg-black transition-all duration-300 ${
+                pathname === "/about" ? "w-6" : "w-0"
+              }`}
+            ></span>
+          </Link>
+
+        </div>
+      </div>
+    </>
   );
 }
 

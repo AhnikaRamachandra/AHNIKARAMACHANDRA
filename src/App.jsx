@@ -3,11 +3,9 @@ import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Figma1 from "./components/Figma1";
 import Figma2 from './components/Figma2';
-import Cards from "./components/Cards";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
-
 
 function App() {
   const location = useLocation(); 
@@ -20,32 +18,34 @@ function App() {
       {isFigmaPage ? (
         // Figma pages only
         <Routes>
-            <Route path="/Beatflow" element={<Figma2 />} />
+          <Route path="/Beatflow" element={<Figma2 />} />
           <Route path="/figma1" element={<Figma1 />} />
-         
         </Routes>
+      ) : isAboutPage ? (
+        // About Me page - full width container
+        <div className="flex justify-center pt-24 px-4 min-h-screen">
+          <div className="w-full md:w-3/4">
+            <Navbar /> 
+            <AboutMe />
+          </div>
+        </div>
       ) : (
-        <div className="flex justify-center items-start min-h-screen">
+        // Projects & other pages
+        <div className="flex justify-center items-start min-h-screen pt-24">
           <div className="md:ml-0 ml-3 md:mr-0 mr-3 md:w-[50%] w-full">
-          
-            {!isAboutPage && <Navbar />}
+            <Navbar /> 
             <Routes>
               <Route path="/" element={<Project />} />
-             
-              <Route path="/about" element={<AboutMe />} />
             </Routes>
-            {!isAboutPage && (
-              <>
-            
-                <Contact />
-                <Footer />
-              </>
-            )}
+
+            <Contact />
+            <Footer />
           </div>
         </div>
       )}
     </>
   );
 }
+
 
 export default App;
