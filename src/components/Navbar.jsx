@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <>
       {/* Top navigation bar */}
-      <div className="w-full fixed top-0 left-0 bg-white z-50">
+      <div className="w-full pr-2 lg:pr-2 fixed top-0 left-0 bg-white z-50">
         <div className="max-w-7xl mx-auto tracking-tight text-md text-gray-900 flex justify-end items-center px-2 py-3 gap-10">
           
           {/* Projects Link */}
