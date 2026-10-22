@@ -5,7 +5,23 @@ import design from '../assets/Designsystem.png'
 import weather from '../assets/weather.png'
 import chic from '../assets/chic.png'
 import beatflow from '../assets/beat.png'
+import alertOverview from '../assets/dashboard.png';
+
 export const PROJECTS = [
+   {
+  title: "Opsolute",
+  description:
+    "A product design case study covering cloud cost overview, cost optimization, alerting dashboards, and design systems to make complex cloud data easier to understand and act on.",
+  technologies: [
+    "UX Research",
+    "Product Design",
+    "FinOps",
+    "Dashboard Design"
+  ],
+  image: alertOverview,
+  link: "/opsolute",
+  nda: true
+},
 
   {
     title: "Beat Flow (Figma design)",
@@ -27,22 +43,7 @@ export const PROJECTS = [
   technologies: ["Figma", "Auto Layout", "Variants", "Typography", "Color Tokens"],
   image: design,
   link: "https://www.figma.com/design/d4X5ZrlgyAQI87aDfqDY2v/icons?node-id=0-1&t=imDAYUIfl6Qxve94-1" 
-}, 
-    {
-      title: "Chic & Shine",
-      description: "A stylish and user-friendly e-commerce platform built using HTML, CSS, and JavaScript.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      image:chic,
-      link: "https://chicshine-ahnikas-projects.vercel.app/"    
-    },
-    {
-      title: "Weather App",
-      description: "A simple and responsive weather app built with HTML, CSS, and JavaScript. Displays temperature, humidity, wind speed, and conditions based on the searched city.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      image: weather,
-      link: "https://ahnikaramachandra.github.io/weather.io.github/"     
-    },
- 
+}
    
     
  

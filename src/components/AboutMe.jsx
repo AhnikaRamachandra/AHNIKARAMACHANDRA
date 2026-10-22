@@ -55,7 +55,7 @@ function AboutMe() {
           {/* Resume Link */}
           <p className="flex items-center gap-2 text-sm md:text-md">
             <FaFileAlt className="text-gray-900" />
-            <a href="/Ahnika.pdf" download className="text-gray-900 hover:underline">
+            <a href="/Ahnika.pdf" download="Ahnika-Resume.pdf" className="text-gray-900 hover:underline">
               Download Resume
             </a>
           </p>

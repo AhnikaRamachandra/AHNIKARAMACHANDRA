@@ -6,12 +6,14 @@ import Figma2 from './components/Figma2';
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import AboutMe from "./components/AboutMe";
+import Alerting from "./components/Alerting";
 
 function App() {
   const location = useLocation(); 
 
-  const isFigmaPage = ["/figma1", "/Beatflow"].includes(location.pathname);
+  const isFigmaPage = ["/figma1", "/Beatflow", "/opsolute"].includes(location.pathname);
   const isAboutPage = location.pathname === "/about";
+  
 
   return (
     <>
@@ -20,7 +22,9 @@ function App() {
         <Routes>
           <Route path="/Beatflow" element={<Figma2 />} />
           <Route path="/figma1" element={<Figma1 />} />
+          <Route path="/opsolute" element={<Alerting />} />
         </Routes>
+        
       ) : isAboutPage ? (
         // About Me page - full width container
         <div className="flex justify-center pt-24 px-4 min-h-screen">

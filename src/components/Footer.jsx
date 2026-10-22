@@ -12,7 +12,7 @@ function Footer() {
     <div className='h-20'>
      <div className='border-t-[1px] text-gray-200 mt-10 '>
      {
-        visible&& <p className='text-xs mt-3 text-gray-400'>© 2025 Ahnika</p>  
+        visible&& <p className='text-xs mt-3 text-gray-400'>© 2026 Ahnika</p>  
      }
     </div> 
     </div>
