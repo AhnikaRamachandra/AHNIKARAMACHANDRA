@@ -39,13 +39,6 @@ function AboutMe() {
           </p>
 
           <p className="flex items-center gap-2 text-sm md:text-md">
-            <MdPhone className="text-blue-600" /> 
-            <a href="tel:+919740859198" className="text-blue-600 hover:underline">
-              +91 9740859198
-            </a>
-          </p>
-
-          <p className="flex items-center gap-2 text-sm md:text-md">
             <FaLinkedin className="text-blue-600" /> 
             <a href="https://www.linkedin.com/in/ahnika9" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
               linkedin.com/in/ahnika9
@@ -55,7 +48,7 @@ function AboutMe() {
           {/* Resume Link */}
           <p className="flex items-center gap-2 text-sm md:text-md">
             <FaFileAlt className="text-gray-900" />
-            <a href="/Ahnika.pdf" download="Ahnika-Resume.pdf" className="text-gray-900 hover:underline">
+            <a href="/Ahnika.pdf" download="Ahnika.pdf" type="application/pdf" className="text-gray-900 hover:underline">
               Download Resume
             </a>
           </p>
