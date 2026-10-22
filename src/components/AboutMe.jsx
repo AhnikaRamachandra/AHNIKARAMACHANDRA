@@ -1,4 +1,4 @@
-import profileImg from '../assets/ahnika1.png';
+import profileImg from '../assets/imageahnika.png';
 import { MdEmail, MdPhone } from "react-icons/md";
 import { FaLinkedin, FaFileAlt } from "react-icons/fa";
 
